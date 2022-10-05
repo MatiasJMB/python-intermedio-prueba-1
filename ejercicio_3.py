@@ -1,12 +1,18 @@
 # Ejercicio 3 (18 puntos): Escribir un programa que muestre el eco de todo lo que el usuario introduzca hasta que el usuario escriba “salir” que terminará.
 
 def main():
-    cadena = input("Ingrese una cadena de texto: ")
-    echo = cadena.split("salir")[0]
-
-    print(echo)
+    print("# Para terminar ingrese 'salir'\n")
+    cadena = str()
+    while (cadena != "salir"):
+        cadena = input("Ingrese una cadena de texto: ")
+        
+        if (cadena == "salir"):
+            print("Programa finalizado.")
+        else:
+            print("⮕ Texto ingresado: " + cadena)
     
-    return echo
+
+    
 
 if __name__ == '__main__':
     main()
