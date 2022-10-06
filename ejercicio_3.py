@@ -5,15 +5,11 @@ def main():
     cadena = str()
     while (cadena != "salir"):
         cadena = input("Ingrese una cadena de texto: ")
-        
         if (cadena == "salir"):
             print("Programa finalizado.")
         else:
             print("⮕ Texto ingresado: " + cadena)
     
-
-    
-
 if __name__ == '__main__':
     main()
     
